@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_Profile"
+            android:icon="@drawable/ic_person"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_About"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_MyWallet"
+            android:icon="@drawable/ic_payment"
+            android:title="My Wallet" />
+        <item
+            android:id="@+id/nav_YourTrips"
+            android:icon="@drawable/ic_car"
+            android:title="Your Trips" />
+
+
+    </group>
+    <item android:title="Account">
+        <menu>
+
+            <item
+                android:id="@+id/nav_Login"
+                android:icon="@drawable/ic_login"
+                android:title="Login / Register" />
+
+            <item
+                android:id="@+id/nav_Reset_Password"
+                android:icon="@drawable/ic_key"
+                android:title="Reset Password" />
+            <item
+                android:id="@+id/nav_Settings"
+                android:icon="@drawable/ic_setting"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_Logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>

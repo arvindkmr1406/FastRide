@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bgdas"
+    tools:context=".FindTripFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 0.00"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:background="@drawable/edit_round"
+                        android:gravity="center"
+                        android:padding="15dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/bottom_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finding Trip"
+
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="20dp"
+            android:background="@drawable/edit_round_white"
+            android:gravity="center"
+            android:padding="25dp"/>
+    </RelativeLayout>
+
+
+</FrameLayout>

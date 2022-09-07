@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout_first"
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:background="#0C1645"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/profile_dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/dpround_light"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_person"/>
+
+                <TextView
+                    android:id="@+id/user_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Full Name"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_type"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_full_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="User Type"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linlaHeaderProgress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/pbHeaderProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ProgressBar>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/dark_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_first"
+            android:layout_marginTop="10dp"
+            android:background="#f0f0f0"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/User_full_name"
+                android:layout_width="190sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Full Name"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/User_full_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/User_full_name"
+                android:text="Driver Name"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="190sp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/User_full_name"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="6dp"
+                android:text="Mobile Number" />
+
+            <TextView
+                android:id="@+id/mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/User_full_name"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/mobile"
+                android:text="Mobile Number"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/licence"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile"
+                android:layout_marginTop="10dp"
+                android:text="State" />
+
+            <TextView
+                android:id="@+id/licence_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile_number"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/licence"
+                android:text="State name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/licence"
+                android:layout_marginTop="10dp"
+                android:text="City Name" />
+
+            <TextView
+                android:id="@+id/city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/licence_number"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/licence"
+                android:text="City Name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pin"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/city"
+                android:layout_marginTop="10dp"
+                android:text="Pin Code" />
+
+            <TextView
+                android:id="@+id/pin_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/city"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/licence"
+                android:text="Pin code"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/blood"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pin"
+                android:layout_marginTop="10dp"
+                android:text="Blood Group" />
+
+            <TextView
+                android:id="@+id/blood_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/licence"
+                android:text="Blood Group"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/em_contact"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blood"
+                android:layout_marginTop="10dp"
+                android:text="Emergency Contact Number" />
+
+            <TextView
+                android:id="@+id/em_contact_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blood_group"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/licence"
+                android:text="XXXXXXXXXX"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/vehicle"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/em_contact"
+                android:layout_marginTop="10dp"
+                android:text="Vehicle Number" />
+
+            <TextView
+                android:id="@+id/vehicle_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/em_contact"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/licence"
+                android:text="XXXXXXXXXX"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vehicleType"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vehicle"
+                android:layout_marginTop="10dp"
+                android:text="Vehicle Type" />
+
+            <TextView
+                android:id="@+id/vehicle_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vehicle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/licence"
+                android:text="SUV"
+                android:textStyle="bold" />
+            <!--<TextView-->
+            <!--android:id="@+id/user_name1"-->
+            <!--android:layout_below="@+id/user_type1"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="190dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="User Name"/>-->
+            <!--<TextView-->
+            <!--android:id="@+id/user_name"-->
+            <!--android:layout_below="@+id/user_type"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/user_name1"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:text="User Name"/>-->
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/dark_layout"
+                android:id="@+id/layout_third_editprofile"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="#f5f5f5"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/icon_edit1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_edit"/>
+                <TextView
+                    android:id="@+id/edit_profile"
+                    android:layout_toRightOf="@+id/icon_edit1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Edit profile Details"/>
+                <ImageView
+                    android:id="@+id/icon_right_arrow1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_right_arrow"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/layout_third_editprofile"
+                android:id="@+id/layout_driver_details"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="#f5f5f5"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/icon_edit_driver2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_menu_gallery"/>
+                <TextView
+                    android:id="@+id/driver_edit_profile"
+                    android:layout_toRightOf="@+id/icon_edit_driver2"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Details"/>
+                <ImageView
+                    android:id="@+id/icon_right_driver_arrow2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_right_arrow"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/layout_driver_details"
+                android:id="@+id/layout_fourth"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="#f5f5f5"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/icon_edit2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_setting"/>
+                <TextView
+                    android:id="@+id/edit_notification_setting"
+                    android:layout_toRightOf="@+id/icon_edit2"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Notification settings"/>
+                <ImageView
+                    android:id="@+id/icon_right_arrow2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_right_arrow"/>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_fifth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_fourth"
+            android:layout_marginTop="15dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/rc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RC"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rc_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/rc" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_gravity="bottom"
+            android:background="#f5f5f5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/update_business_profile"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#0C1645"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Update Profile" />
+
+        </RelativeLayout>
+
+
+
+</FrameLayout>

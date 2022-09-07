@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/routmap"
+    tools:context=".RoutMapFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/decline_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="DECLINE"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:background="@drawable/btn_round_blue"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/ic_cancel"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+        <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:background="#000522">
+     <TextView
+         android:id="@+id/driver_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Rahul X"
+         android:textColor="@color/white"
+         android:textSize="20dp"
+         android:layout_toLeftOf="@+id/profile_dp_rout"
+         android:layout_marginTop="50dp"
+         android:layout_marginRight="20dp"/>
+
+     <ImageView
+         android:id="@+id/profile_dp_rout"
+         android:layout_width="70dp"
+         android:layout_height="70dp"
+         android:background="@drawable/dpround_light"
+         android:layout_centerHorizontal="true"
+         android:padding="5dp"
+         android:layout_marginBottom="50dp"
+         android:layout_marginTop="40dp"
+         android:src="@drawable/ic_person"/>
+     <TextView
+         android:id="@+id/rating"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="4.89 X"
+         android:textColor="@color/white"
+         android:textSize="16dp"
+         android:layout_toRightOf="@+id/profile_dp_rout"
+         android:layout_marginTop="50dp"
+         android:drawableRight="@drawable/ic_baseline_star_24"
+         android:layout_marginLeft="20dp"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="2 Min"
+         android:textColor="@color/white"
+         android:textSize="25dp"
+         android:layout_marginTop="120dp"
+         android:textStyle="bold"
+         android:layout_centerHorizontal="true"/>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="0.4 mi"
+         android:textColor="@color/white"
+         android:textSize="18dp"
+         android:layout_marginTop="150dp"
+         android:layout_marginBottom="10dp"
+         android:layout_centerHorizontal="true"/>
+ </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtoForRideFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/otp"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OTP For Start Ride"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textSize="30dp"/>
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:maxLength="4"
+                android:textSize="50dp"
+                android:hint="OTP"
+                android:cursorVisible="false"
+                android:background="@drawable/edit_round"/>
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_round_blue"
+                android:layout_marginTop="25dp"
+                android:text="Submit"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

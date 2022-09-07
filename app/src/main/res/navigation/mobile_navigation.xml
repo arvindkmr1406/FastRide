@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="in.co.fastride.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_Profile"
+        android:name="in.co.fastride.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_About"
+        android:name="in.co.fastride.ui.about.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_MyWallet"
+        android:name="in.co.fastride.ui.mywallet.MyWalletFragment"
+        android:label="My Wallet"
+        tools:layout="@layout/fragment_my_wallet" />
+    <activity
+        android:id="@+id/nav_Login"
+        android:name="in.co.fastride.LoginActivity"
+        android:label="Login"
+        tools:layout="@layout/activity_login" />
+
+    <activity
+        android:id="@+id/nav_Reset_Password"
+        android:name="in.co.fastride.ResetPasswordActivity"
+        android:label="Reset Password"
+        tools:layout="@layout/activity_reset_password" />
+
+    <activity
+        android:id="@+id/nav_Logout"
+        android:name="in.co.fastride.LoginActivity"
+        android:label="Logout"
+        tools:layout="@layout/activity_login" />
+</navigation>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.about.AboutFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/bgsmall"/>
+        <TextView
+            android:id="@+id/about_heading"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:text="About us"/>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_below="@+id/about_heading"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textStyle="italic"
+            android:text="Lorium ilipsm optimum chan content about us content Lorium ilipsm optimum changing lorium ilipsn content about us content Lorium ilipsm optimum changing lorium ilipsn content about us content "/>
+
+        <TextView
+            android:id="@+id/about2"
+            android:layout_below="@+id/about"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Lorium ilipsm optimum chan content Lorium ontent nt Lorium ilipsm optimum changing lorium ilipsn content about us content Lorium ilipsm optimum changing lorium Lorium ilipsm optimum chan content Lorium ontent nt Lorium ilipsm optimum changing lorium ilipsn content about us content Lorium ilipsm optimum changing lorium"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

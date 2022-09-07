@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mywallet.MyWalletFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="300dp"
+                   android:layout_margin="20dp"
+                   android:orientation="vertical"
+                   android:padding="20dp"
+                   android:background="#E1E1E1">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Fast Ride Cash"
+                       android:textStyle="bold"
+                       android:textColor="#000"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textColor="#000"
+                       android:textSize="40dp"
+                       android:textStyle="bold"
+                       android:layout_marginTop="10dp"
+                       android:text="Rs. 45500"/>
+                   <Button
+                       android:layout_width="150dp"
+                       android:layout_height="45dp"
+                       android:text="Add Fund"
+                       android:background="@drawable/btn_round_blue"
+                       android:drawableLeft="@drawable/ic_add"/>
+                   <Button
+                       android:layout_width="200dp"
+                       android:layout_height="45dp"
+                       android:text="Redeem"
+                       android:layout_marginTop="10dp"
+                       android:background="@drawable/btn_round_orange"
+                       android:drawableLeft="@drawable/ic_rupee"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="20dp"
+                   android:orientation="vertical"
+                   android:padding="20dp">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="My Bank"
+                       android:textStyle="bold"
+                       android:textColor="#000"/>
+                   <EditText
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="#000"
+                       android:layout_marginTop="20dp"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       android:text="....8765"
+                       android:textStyle="bold"
+                       android:drawableLeft="@drawable/ic_payment"
+                       android:textColor="#000"/>
+                   <EditText
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="#000"
+                       android:layout_marginTop="20dp"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       android:text="My Earning"
+                       android:textStyle="bold"
+                       android:textColor="#000"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:text="1500"
+                       android:textStyle="bold"
+                       android:background="@drawable/edit_round"
+                       android:padding="20dp"
+                       android:drawableLeft="@drawable/ic_rupee"
+                       android:textColor="#000"/>
+
+               </LinearLayout>
+           </LinearLayout>
+       </ScrollView>
+   </RelativeLayout>
+
+</FrameLayout>

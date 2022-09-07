@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bgdas"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView_Layout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Your Current Location"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:background="@drawable/edit_round_white"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Search Destination"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:background="@drawable/edit_round_white"
+                    android:gravity="center"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_alignParentBottom="true"
+    android:background="#E4E4E4"
+    android:orientation="vertical"
+    android:paddingBottom="50dp"
+    android:weightSum="4">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Vehicles"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:padding="10dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#304FFE"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SUV"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/suv"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#304FFE"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="HATCHBACK"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@mipmap/hatchback"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#304FFE"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="MICRO"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@mipmap/micro"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#304FFE"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="PICKUP"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@mipmap/pickup"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <Button
+        android:id="@+id/btn_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_round_blue"
+        android:text="Search"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
